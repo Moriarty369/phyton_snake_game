@@ -15,7 +15,6 @@ snake = Snake()
 food = Food()
 scoreboard = Scoreboard()
 
-
 # Inputs controllers
 screen.listen()
 screen.onkey(snake.up, "Up")
@@ -38,13 +37,15 @@ while is_game_on:
 
     # Detectando colisiones con las paredes
     if snake.head.xcor() > 285 or snake.head.xcor() < -285 or snake.head.ycor() > 285 or snake.head.ycor() < -285:
-        is_game_on = False
-        scoreboard.game_over()
+        scoreboard.reset_score()
+        snake.reset_snake()
 
     # Detectando colisiones con la propia serpiente
     for segment in snake.segments[1:]:
-        if snake.head.distance(segment) < 10:
-            is_game_on = False
-            scoreboard.game_over()
+        if segment == snake.head:
+            pass
+        elif snake.head.distance(segment) < 10:
+            scoreboard.reset_score()
+            snake.reset_snake()
 
 screen.exitonclick()

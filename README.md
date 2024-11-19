@@ -1,17 +1,15 @@
 # 🐍 Snake Game
 
-![Python]([https://img.shields.io/badge/Blockchain-Python-blue](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue))
+![Python]((https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue))
 
 This project implements the classic Snake Game using Python and the Turtle graphics library.
 
 ## 🛠️ Technologies Used
 
-- **Python**: For blockchain logic and network node implementation.
+- **Python**: The main programming language for implementing the game logic.
 - **Turtle**: A Python graphics library used for rendering the game on the screen.
 
-
 ## 📂 Project Structure
-
 - **`main.py:`**: The main file that runs the game and handles game logic.
 - **`snake.py`**:  The class that defines the snake's behavior and movement.
 - **`food.py`**: The class that creates and manages the food.

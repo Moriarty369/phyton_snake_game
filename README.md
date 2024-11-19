@@ -62,6 +62,3 @@ Here’s a screenshot of the game in action:
 
 ## 🧑‍💻 Author
 Created by **Abelardo Acosta Cracco**.
-
-
-# Español:
